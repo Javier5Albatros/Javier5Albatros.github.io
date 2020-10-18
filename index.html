@@ -1,19 +1,88 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="build/styles.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="h-64">
-      <div class="p-12 m-4 bg-green-600">
-        <h1 class="text-2xl font-bold text-white">Tailwind CSS Demo</h1>
-      </div>
-      <div class="p-4 m-4 bg-green-300 h-full">
-        <h2 class="text-green-900">Have much fun using Tailwind CSS</h2>
-      </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+    <div id="main">
+        <header>
+            <div id="logo">
+                <img src="img/logo.jpg"></img>
+            </div>
+            <div id="line">
+
+            </div>
+            <div id="presentation">
+                <h1>Welcome to Our Landing Page</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+            </div>
+        </header>
+        <div id="content">
+            <div id="left">
+                <div id="list-point">
+                    <ul>
+                        <li class="list-item list-1">Point One</li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam mi nibh. Curabitur malesuada odio ut neque.</p>
+                        <li class="list-item list-2">Point Two</li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam mi nibh. Curabitur malesuada odio ut neque.</p>
+                        <li class="list-item list-3">Point Three</li>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam mi nibh. Curabitur malesuada odio ut neque.</p>
+                    </ul>
+                </div>
+                <div class="gray-line">
+
+                </div>
+                <div id="about">
+                    <h3>More About Us</h3>
+                    <p>In rhoncus euismod suscipit. Aliquam erat volutpat. Pellentesque blandit sed diam eu mollis. Quisque pretium felis et enim finibus venenatis. Praesent ligula ex</p>
+                </div>
+            </div>
+            <div id="right">
+                <h3>Getting Started</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam mi nibh</p>
+                <form>
+                    <div>
+                        <label><b>Name*</b></label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label><b>Email*</b></label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label><b>Company</b></label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label><b>Phone</b></label>
+                        <input type="text">
+                    </div>
+                    <div id="submit">
+                        <p>* Required fields</p>
+                        <input type="submit" value="Get in touch!">
+                    </div>
+                </form>
+                <div class="gray-line"></div>
+                <div id="disclaimer">
+                    <p><i>We would never use any of our subscribers personal information for anything unspecified</i></p>
+                </div>
+            </div>
+        </div>
+        <div id="testimonial">
+            <img src="img/testimonial.png">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam mi nibh. Curabitur malesuada odio ut neque varius rutrum. Duis cursus pharetra justo, sit amet lacinia nulla eleifend maximus. Curabitur eget eros at arcu interdum tempor. Integer ut aliquet tellus. Cras eget odio eu nulla congue congue. Sed congue metus justo" <b>-John Doe From SomeCompany</b></p>
+        </div>
+        <div class="gray-line"></div>
+        <footer>
+            Cpyright &copy; 2020
+        </footer>
     </div>
-  </body>
+
+</body>
 </html>
