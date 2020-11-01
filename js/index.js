@@ -1,13 +1,16 @@
 import { mierdas } from "./mierdas.js";
 import { setupSidebar } from "./sidebar.js";
 import { setupCards } from "./cards.js";
+import { getBeer } from './beer.js';
+import { getStars } from './github.js';
 
 document.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
   let upButton = document.querySelector("#up-button");
-  let modal = document.querySelector(".modal");
-  let instances = M.modal.init(modal, options);
+  var elems = document.querySelectorAll(".modal");
+  let modalButton = document.querySelector("#modal-beer-button");
+  var instances = M.Modal.init(elems, {});
 
   window.onscroll = () => {
     document.body.scrollTop > 40 || document.documentElement.scrollTop > 40
@@ -20,6 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.documentElement.scrollTop = 0;
   };
 
+  modalButton.onclick = () => {
+    getBeer();
+  }
+
+  getStars('freeCodeCamp', 'freeCodeCamp')
 
   setupSidebar(mierdas);
   setupCards(mierdas);

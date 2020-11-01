@@ -35,3 +35,11 @@ body{
     -ms-transition: opacity .15s ease-in;
     -o-transition: opacity .15s ease-in;
 }
+
+.beer-img{
+    height: 175px;
+}
+
+.modal{
+    min-height: 200px;
+}

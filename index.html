@@ -26,25 +26,29 @@
       </div>
       <div id="brand" class="col s9">
         <h1>Página de Mierda</h1>
-        <span>Aunque la página no sea tan fea seguirá siendo una mierda</span>
+        <span>Estrellas de este repo: <span id="estrellas"></span></span>
       </div>
       <div class="col s12 z" id="mierda-button">
         <a
           class="waves-effect waves-light btn-large modal-trigger"
           data-target="modal1"
-          >Pulsa para mierdificarte</a
+          href="#modal1"
+          id="modal-beer-button"
+          >Pulsa para elegir una cerveza</a
         >
       </div>
       <!-- Modal Structure -->
       <div id="modal1" class="modal">
-        <div class="modal-content">
-          <h4>Modal Header</h4>
-          <p>A bunch of text</p>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-close waves-effect waves-green btn-flat"
-            >Agree</a
-          >
+        <div class="preloader-wrapper big active">
+          <div class="spinner-layer spinner-blue-only">
+            <div class="circle-clipper left">
+              <div class="circle"></div>
+            </div><div class="gap-patch">
+              <div class="circle"></div>
+            </div><div class="circle-clipper right">
+              <div class="circle"></div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
